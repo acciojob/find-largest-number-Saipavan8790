@@ -1,20 +1,19 @@
 function findLargest(a, b, c) {
-  if (a >= b && a >= c) {
-    if (b === c) {
-      return a; 
-    }
-    return a;  
-  } else if (b >= a && b >= c) {
-    if (a === c) {
-      return b; 
-    }
-    return b; 
-  }  
-    if (a === b) {
-      return c;
-    }
-    return c;
-   
+  //your code here
+	if (a>b) {
+		if(a>c)return a;
+		else return c;
+	}
+	if(b>a)
+	{
+		if(b>c)return b;
+		else return c;
+	}
+	if(c>a)
+	{
+		if(c>b)return c;
+		else return b;
+	}
 }
 
 const num1 = parseInt(prompt("Enter First Number."));
